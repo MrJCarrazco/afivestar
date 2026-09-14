@@ -19,7 +19,13 @@
     });
   }
 
-  // Reveal-on-scroll
+  // Reveal-on-scroll (staggered children get an incremental delay)
+  document.querySelectorAll("[data-stagger]").forEach(function (group) {
+    var kids = group.querySelectorAll(".reveal");
+    kids.forEach(function (el, i) {
+      el.style.setProperty("--reveal-delay", (i * 0.09).toFixed(2) + "s");
+    });
+  });
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && reveals.length) {
     var io = new IntersectionObserver(
@@ -56,4 +62,51 @@
       });
     }, { passive: true });
   }
+
+  // Before/After compare slider (pointer events + keyboard)
+  document.querySelectorAll("[data-ba]").forEach(function (frame) {
+    var handle = frame.querySelector(".ba-handle");
+    if (!handle) return;
+    var pos = 50;
+
+    function setPos(pct) {
+      pos = Math.max(0, Math.min(100, pct));
+      frame.style.setProperty("--ba-pos", pos + "%");
+      handle.setAttribute("aria-valuenow", String(Math.round(pos)));
+    }
+
+    function posFromEvent(ev) {
+      var rect = frame.getBoundingClientRect();
+      return ((ev.clientX - rect.left) / rect.width) * 100;
+    }
+
+    setPos(50);
+
+    var dragging = false;
+    frame.addEventListener("pointerdown", function (ev) {
+      dragging = true;
+      frame.setPointerCapture(ev.pointerId);
+      setPos(posFromEvent(ev));
+      ev.preventDefault();
+    });
+    frame.addEventListener("pointermove", function (ev) {
+      if (dragging) setPos(posFromEvent(ev));
+    });
+    function stop(ev) {
+      dragging = false;
+      if (frame.hasPointerCapture && frame.hasPointerCapture(ev.pointerId)) {
+        frame.releasePointerCapture(ev.pointerId);
+      }
+    }
+    frame.addEventListener("pointerup", stop);
+    frame.addEventListener("pointercancel", stop);
+
+    handle.addEventListener("keydown", function (ev) {
+      var step = ev.shiftKey ? 10 : 4;
+      if (ev.key === "ArrowLeft" || ev.key === "ArrowDown") { setPos(pos - step); ev.preventDefault(); }
+      else if (ev.key === "ArrowRight" || ev.key === "ArrowUp") { setPos(pos + step); ev.preventDefault(); }
+      else if (ev.key === "Home") { setPos(0); ev.preventDefault(); }
+      else if (ev.key === "End") { setPos(100); ev.preventDefault(); }
+    });
+  });
 })();

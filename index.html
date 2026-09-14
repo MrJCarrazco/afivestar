@@ -7,6 +7,9 @@
 <meta name="description" content="A Five Star is an Alaska drywall contractor serving Wasilla, Palmer, Anchorage, Eagle River, Fairbanks, Kenai, and all of Alaska. Sheetrock hanging, taping, level 5 finishes, texture matching, and drywall repair. Free estimates.">
 <meta name="keywords" content="drywall contractor Alaska, sheetrock Wasilla, drywall repair Anchorage, taping, mudding, texture, level 5 finish">
 <link rel="canonical" href="https://mrjcarrazco.github.io/afivestar/">
+<link rel="alternate" hreflang="en" href="https://mrjcarrazco.github.io/afivestar/">
+<link rel="alternate" hreflang="es" href="https://mrjcarrazco.github.io/afivestar/?lang=es">
+<link rel="alternate" hreflang="x-default" href="https://mrjcarrazco.github.io/afivestar/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="A Five Star — Alaska Drywall &amp; Sheetrock Contractor">
 <meta property="og:description" content="Sheetrock hanging, taping, texture, and repair across Wasilla, Anchorage, and all of Alaska. Free estimates.">
@@ -56,6 +59,7 @@
       <li><a href="gallery.html">Our Work</a></li>
       <li><a href="index.html#faq">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><button class="lang-toggle" type="button" aria-pressed="false" aria-label="Switch language / Cambiar idioma"><span class="lang-en lang-active">EN</span><span class="lang-sep">|</span><span class="lang-es">ES</span></button></li>
       <li><a class="nav-cta" href="tel:+19075550155">(907) 555-0155</a></li><!-- JUAN: replace phone -->
     </ul>
   </nav>
@@ -192,7 +196,7 @@
     <span class="kicker">What We Do</span>
     <h2>Complete Drywall Services</h2>
     <p class="lead">One crew, start to finish — from the first sheet on the studs to a paint-ready wall.</p>
-    <div class="grid-3" style="margin-top: 36px;">
+    <div class="grid-3" style="margin-top: 36px;" data-stagger>
       <div class="card reveal">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="12"/></svg></div>
         <h3>Sheetrock Hanging</h3>
@@ -233,18 +237,109 @@
   </div>
 </section>
 
+<!-- ================= REPAIR RESULTS (BEFORE / AFTER) ================= -->
+<section class="section section-alt" id="repair-results">
+  <div class="container">
+    <span class="kicker">Repair Results</span>
+    <h2>Drag to See the Difference</h2>
+    <p class="lead">Cracks, holes, and water stains on one side — a smooth, freshly painted wall on the other. Drag the handle, or focus it and use your arrow keys, to compare.</p>
+    <div class="ba-wrap reveal">
+      <div class="ba-frame" data-ba>
+        <div class="ba-layer ba-after">
+          <svg viewBox="0 0 480 320" role="img" aria-label="Illustration of a repaired wall: smooth, freshly painted, with crisp trim">
+            <defs>
+              <linearGradient id="ba-i-after" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6f97c1"/><stop offset="1" stop-color="#517ba8"/></linearGradient>
+            </defs>
+            <rect x="0" y="0" width="480" height="290" fill="url(#ba-i-after)"/>
+            <path d="M120 0 L215 0 L85 290 L25 290 Z" fill="#ffffff" opacity="0.08"/>
+            <path d="M255 0 L295 0 L165 290 L140 290 Z" fill="#ffffff" opacity="0.06"/>
+            <g>
+              <rect x="196" y="66" width="124" height="94" rx="4" fill="#f6f2e6" stroke="#0d1b2a" stroke-width="3"/>
+              <path d="M204 146 l32 -38 22 24 26 -34 34 48 z" fill="#33475b"/>
+              <circle cx="292" cy="90" r="9" fill="#f2b705"/>
+            </g>
+            <g>
+              <path d="M418 246 q-14 -30 6 -48 q4 26 10 34 q2 -30 20 -40 q4 34 -8 54 z" fill="#3f6f52"/>
+              <path d="M414 246 h44 l-5 38 h-34 z" fill="#c9a24b"/>
+            </g>
+            <rect x="0" y="284" width="480" height="20" fill="#f6f2e6"/>
+            <rect x="0" y="304" width="480" height="16" fill="#0b1622"/>
+          </svg>
+          <span class="ba-tag ba-tag-after">After</span>
+        </div>
+        <div class="ba-layer ba-before">
+          <svg viewBox="0 0 480 320" role="img" aria-label="Illustration of a damaged wall with settling cracks, a doorknob hole, popped nails, and a water stain">
+            <defs>
+              <linearGradient id="ba-i-before" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8e2d2"/><stop offset="1" stop-color="#d6cdb4"/></linearGradient>
+              <radialGradient id="ba-i-stain" cx="0.5" cy="0.35" r="0.65"><stop offset="0" stop-color="#b08d57" stop-opacity="0.55"/><stop offset="1" stop-color="#b08d57" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect x="0" y="0" width="480" height="290" fill="url(#ba-i-before)"/>
+            <ellipse cx="360" cy="58" rx="95" ry="56" fill="url(#ba-i-stain)"/>
+            <path d="M302 28 q28 40 10 68 q40 -10 58 10" stroke="#a07f4c" stroke-width="2" fill="none" opacity="0.5"/>
+            <path d="M60 18 l14 38 -8 26 18 34 -4 30 16 30" stroke="#6b6152" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M74 58 l20 10" stroke="#6b6152" stroke-width="2" stroke-linecap="round"/>
+            <path d="M84 118 l24 8" stroke="#6b6152" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="215" cy="185" rx="26" ry="22" fill="#3a3126"/>
+            <path d="M191 176 l-14 -9 M239 170 l15 -10 M212 208 l-6 16 M234 200 l12 12" stroke="#6b6152" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="215" cy="185" rx="26" ry="22" fill="none" stroke="#8a7a5e" stroke-width="3"/>
+            <circle cx="330" cy="202" r="4" fill="#8a7a5e"/>
+            <circle cx="346" cy="162" r="4" fill="#8a7a5e"/>
+            <circle cx="118" cy="230" r="4" fill="#8a7a5e"/>
+            <rect x="380" y="182" width="60" height="58" fill="#cfc4a6" stroke="#a89a78" stroke-width="2" stroke-dasharray="6 4"/>
+            <rect x="0" y="288" width="480" height="16" fill="#b8ab8d"/>
+            <rect x="0" y="304" width="480" height="16" fill="#0b1622"/>
+          </svg>
+          <span class="ba-tag ba-tag-before">Before</span>
+        </div>
+        <div class="ba-line" aria-hidden="true"></div>
+        <button class="ba-handle" type="button" role="slider" aria-label="Compare damaged wall and finished repair" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M8 5l-6 7 6 7M16 5l6 7-6 7"/></svg>
+        </button>
+      </div>
+      <p class="ba-note">Illustration — real project photos coming soon.</p>
+    </div>
+  </div>
+</section>
+
 <!-- ================= PROCESS ================= -->
 <section class="section section-dark">
   <div class="container">
     <span class="kicker">How It Works</span>
     <h2>From Bare Studs to Paint-Ready</h2>
     <p class="lead" style="color: var(--mist);">A clear process, communicated up front — no surprises on your schedule or your invoice.</p>
-    <div class="steps">
+    <div class="steps" data-stagger>
       <div class="step reveal"><h3>Free Estimate</h3><p>Call or send the quote form. We look at plans or walk the job, then give you a straight price.</p></div>
       <div class="step reveal"><h3>Hang</h3><p>Boards go up square and tight, screwed to spec, with the right board for each room.</p></div>
       <div class="step reveal"><h3>Tape &amp; Finish</h3><p>Seams taped, coated, and sanded to the finish level your paint calls for.</p></div>
       <div class="step reveal"><h3>Walkthrough</h3><p>We inspect under work lights with you and touch up anything that isn't five-star.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- ================= WHAT TO EXPECT ================= -->
+<section class="section" id="what-to-expect">
+  <div class="container">
+    <span class="kicker">Your Free Estimate</span>
+    <h2>What to Expect on Your Free Estimate</h2>
+    <p class="lead">No pressure, no vague numbers. Here's exactly how it goes from your first call to a finished, clean job site.</p>
+    <ol class="expect-steps" data-stagger>
+      <li class="expect-step reveal">
+        <h3>Walkthrough &amp; Measure</h3>
+        <p>We walk the job with you — or review your plans — measure the rooms, and note board type, finish level, and access.</p>
+      </li>
+      <li class="expect-step reveal">
+        <h3>Written Quote, Same Week</h3>
+        <p>You get a written quote with a straight price and a realistic schedule, usually within the same week. No surprise line items later.</p>
+      </li>
+      <li class="expect-step reveal">
+        <h3>Scheduled Crew</h3>
+        <p>We book firm dates, protect your floors and fixtures, and show up when we said we would — with the materials already lined up.</p>
+      </li>
+      <li class="expect-step reveal">
+        <h3>Clean Handoff</h3>
+        <p>Dust controlled, debris hauled, and a final walkthrough under work lights before we call it done.</p>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -271,7 +366,7 @@
   <div class="container">
     <span class="kicker">What Clients Say</span>
     <h2>Built on Word of Mouth</h2>
-    <div class="grid-3" style="margin-top: 36px;">
+    <div class="grid-3" style="margin-top: 36px;" data-stagger>
       <figure class="card testimonial reveal">
         <div class="stars" aria-label="5 out of 5 stars">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01z"/></svg>
@@ -294,6 +389,52 @@
         <figcaption>Sample Review<span>Mat-Su Valley builder — placeholder text</span></figcaption>
       </figure>
     </div>
+  </div>
+</section>
+
+<!-- ================= CARE TIPS ================= -->
+<section class="section section-alt" id="drywall-care">
+  <div class="container">
+    <span class="kicker">After the Job</span>
+    <h2>Caring for New Drywall</h2>
+    <p class="lead">A few habits in the first weeks keep a new finish looking five-star for years — especially through an Alaska winter.</p>
+    <div class="grid-3 care-grid" data-stagger>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Let the Paint Cure</h3>
+        <p>Paint feels dry in hours but takes up to 30 days to fully cure. Wait before scrubbing walls or hanging heavy items, and go easy with cleaners in the first month.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+        <h3>Watch Winter Humidity</h3>
+        <p>Alaska winters swing indoor air from bone-dry to damp. Keep humidity roughly between 30 and 50 percent so seams and corners stay tight through freeze-up.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div>
+        <h3>Expect a Few Nail Pops</h3>
+        <p>As new framing lumber dries, a screw head or two can telegraph through — it's normal settling in the first year, not a defect, and it's a quick fix.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+        <h3>Our Touch-Up Policy</h3>
+        <p>If a seam, corner, or nail pop shows up within the first year on work we finished, call us — we'll come back and touch it up. That's the five-star standard.<!-- JUAN: confirm touch-up policy terms --></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE GUARANTEE BAND ================= -->
+<section class="guarantee-band">
+  <div class="container guarantee-inner reveal">
+    <div class="guarantee-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+    </div>
+    <div>
+      <span class="kicker">Our Promise</span>
+      <h2>The Five-Star Service Guarantee</h2>
+      <p>If a seam shows, a corner cracks, or a patch telegraphs through the paint on work we finished, we come back and make it right. Straight prices, firm dates, and a finish we'll put our name on.</p>
+    </div>
+    <a class="btn btn-primary" href="contact.html">Get Your Free Estimate</a>
   </div>
 </section>
 
@@ -434,5 +575,6 @@
 </a>
 
 <script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
 </body>
 </html>
