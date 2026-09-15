@@ -61,10 +61,10 @@ Published now (✔) or queued. One page per week is plenty; each targets one lon
 |---|---|---|
 | 1 | **Drywall Repair in Wasilla, AK** (`drywall-repair-wasilla.html`) | ✔ PUBLISHED |
 | 2 | **Texture Matching & Drywall Texture in Palmer, AK** (`texture-matching-palmer.html`) | ✔ PUBLISHED |
-| 3 | Sheetrock Installation for New Construction — Mat-Su Valley | queued |
-| 4 | Water & Ice-Dam Ceiling Damage Repair — Wasilla & Big Lake | queued |
+| 3 | **Sheetrock Installation — Mat-Su** (`sheetrock-installation-matsu.html`) | ✔ PUBLISHED |
+| 4 | **Water & Ice-Dam Ceiling Repair — Wasilla & Big Lake** (`water-damage-ceiling-repair-wasilla.html`) | ✔ PUBLISHED |
 | 5 | Level 5 Smooth Wall Finish — When Alaska Homes Need It | queued |
-| 6 | Contratista de Drywall en Wasilla y Palmer — Se Habla Español (full ES landing page — near-zero competition for Spanish drywall queries in AK) | queued |
+| 6 | **Contratista de Drywall — Se Habla Español** (`contratista-drywall-wasilla-palmer.html`, full ES page) | ✔ PUBLISHED |
 | 7 | Garage & Shop Drywall + Fire-Rated Board — Mat-Su | queued |
 | 8 | Drywall in Winter: How Alaska Crews Finish Year-Round | queued (educational, shareable in FB groups) |
 | 9 | Popcorn Ceiling Removal & Re-Texture — Wasilla/Palmer | queued |
@@ -81,7 +81,7 @@ Rules for every page: honest generic copy, no invented reviews/claims, one town 
 3. ⬜ **Juan: confirm FormSubmit** — submit the site form once, click the confirmation link in afivedrywall@gmail.com.
 4. ⬜ Citations top 5 (`CITATIONS_AND_NAP.md`), one per evening.
 5. ⬜ Ask every finished customer for a Google review (link comes from GBP dashboard). Target: 5 reviews in 60 days — that alone likely beats every Wasilla drywall profile except none we could find.
-6. ⬜ Facebook: personal-page announcement + join "Mat-Su Valley Buy Sell Trade" / local community groups; post finished-job photos (with owner permission) monthly. Free, and where Mat-Su homeowners actually look.
+6. ⬜ Facebook (see `LEADS_CHANNELS.md` for full channel playbook + ranked recommendations): personal-page announcement + join "Mat-Su Valley Buy Sell Trade" / local community groups; post finished-job photos (with owner permission) monthly. Free, and where Mat-Su homeowners actually look.
 7. ⬜ Publish queued content pages, one/week.
 8. 📊 Measure: quote-form emails + calls per week. Nothing else counts.
 
