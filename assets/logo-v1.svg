@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#23A04F"/><stop offset="1" stop-color="#0F5132"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD84D"/><stop offset="1" stop-color="#F5C518"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+  <polygon points="32.00,8.00 37.05,22.04 51.97,22.51 40.18,31.66 44.34,45.99 32.00,37.60 19.66,45.99 23.82,31.66 12.03,22.51 26.95,22.04" fill="url(#gold)" stroke="#0A3B24" stroke-width="1" stroke-linejoin="round"/>
+  <rect x="15" y="48" width="34" height="8" rx="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <line x1="26" y1="49" x2="26" y2="55" stroke="#ffffff" stroke-width="1.6"/>
+  <line x1="38" y1="49" x2="38" y2="55" stroke="#ffffff" stroke-width="1.6"/>
+  <circle cx="32" cy="52" r="2.4" fill="url(#gold)"/>
+</svg>
