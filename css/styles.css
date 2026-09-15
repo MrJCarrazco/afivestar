@@ -827,3 +827,12 @@ label.field textarea { resize: vertical; min-height: 110px; }
   .ba-tag { font-size: 0.66rem; padding: 5px 10px; }
   .expect-step { padding: 24px 20px; }
 }
+
+/* Service-area pages */
+.checklist { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; }
+.checklist li { position: relative; padding: 6px 0 6px 30px; }
+.checklist li::before { content: ""; position: absolute; left: 0; top: 9px; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--green, #23A04F); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/%3E%3C/svg%3E") center/contain no-repeat; }
+.steps-list { margin: 0.6rem 0 1rem 1.2rem; padding: 0; }
+.steps-list li { margin: 8px 0; }
