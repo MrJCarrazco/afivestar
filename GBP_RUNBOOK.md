@@ -7,8 +7,8 @@ When someone in Wasilla googles "drywall repair near me", the top of the page is
 ## Step-by-step
 
 1. Go to **https://business.google.com** → sign in with **afivedrywall@gmail.com**.
-2. Click **Add your business** → business name: exactly **`A Five Star Drywall`**
-   (Keep it consistent everywhere — see CITATIONS_AND_NAP.md. Don't stuff keywords like "A Five Star Drywall Wasilla Best Sheetrock" — Google suspends profiles for that.)
+2. Click **Add your business** → business name: exactly **`A Five Drywall`**
+   (Keep it consistent everywhere — see CITATIONS_AND_NAP.md. Don't stuff keywords like "A Five Drywall Wasilla Best Sheetrock" — Google suspends profiles for that.)
 3. **Business category:**
    - Primary: **Drywall contractor**
    - Additional (add after setup in Edit profile → Business category): **Dry wall supply store? NO — skip.** Add: **Contractor**, **Construction company** (only if offered; keep it honest).
@@ -19,7 +19,7 @@ When someone in Wasilla googles "drywall repair near me", the top of the page is
 7. **Verification:** Google will offer postcard-by-mail, phone, email, or **video verification** (most common now for service businesses: they ask for a short video showing your work vehicle, tools, and a job in progress). Do whichever it offers. Postcard takes ~1-2 weeks to a mailing address (not shown publicly).
 8. After verification, finish the profile (Edit profile):
    - **Hours:** e.g. Mon–Sat 8:00 AM – 6:00 PM (whatever is true).
-   - **Description** (paste, edit freely): *"A Five Star Drywall is a family-run drywall and sheetrock contractor based in Wasilla, Alaska, serving the Mat-Su Valley and Anchorage. We handle hanging, taping and mudding, texture and texture matching, level 5 smooth finishes, and drywall repair — from single-room patches to full new-construction houses. Free estimates. Se habla español."*
+   - **Description** (paste, edit freely): *"A Five Drywall is a family-run drywall and sheetrock contractor based in Wasilla, Alaska, serving the Mat-Su Valley and Anchorage. We handle hanging, taping and mudding, texture and texture matching, level 5 smooth finishes, and drywall repair — from single-room patches to full new-construction houses. Free estimates. Se habla español."*
    - **Attributes:** check "Identifies as Latino-owned" if you want (helps some searches), "Free estimates" if offered.
    - **Services list:** Drywall installation, Drywall repair, Taping and mudding, Texture application, Texture matching, Level 5 finish, Popcorn ceiling removal, Water damage drywall repair.
    - **Opening date:** the real year the family business started.

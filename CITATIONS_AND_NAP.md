@@ -1,11 +1,11 @@
-# Citations & NAP Consistency Sheet — A Five Star Drywall
+# Citations & NAP Consistency Sheet — A Five Drywall
 
 ## THE RULE
 Every directory listing must use **these exact strings, character for character**. Google cross-checks them; mismatches ("A 5 Star", different phone formats) weaken local ranking.
 
 ## NAP — copy-paste block
 ```
-Business name : A Five Star Drywall
+Business name : A Five Drywall
 Phone         : (907) 205-6902
 Phone (intl)  : +1 907-205-6902
 Email         : afivedrywall@gmail.com
@@ -38,7 +38,7 @@ If you later buy a domain (e.g. afivestardrywall.com), update the website URL **
 
 ### Tier 3 — Alaska-specific / niche
 | 10 | Alaska Dept. of Commerce license lookup | commerce.alaska.gov | Not a citation you create, but customers and BuildZoom check it — make sure the contractor license & business license are current and the business name matches. |
-| 11 | BuildZoom | buildzoom.com | Auto-generates a profile from the AK license board — search "A Five Star" and **claim it** (free). Competitors' unclaimed profiles look abandoned; a claimed one stands out. |
+| 11 | BuildZoom | buildzoom.com | Auto-generates a profile from the AK license board — search "A Five Drywall" and **claim it** (free). Competitors' unclaimed profiles look abandoned; a claimed one stands out. |
 | 12 | Mat-Su Chamber / Wasilla Chamber | matsuchamber.us | Membership costs money — skip for now, note for later. |
 | 13 | Alaska's List | alaskaslist.com | Alaska's craigslist. Free "services" post; renew monthly. Actually read by locals. |
 | 14 | Hubbiz / Yellow Pages / MapQuest | hub.biz, yellowpages.com, mapquest.com | Low value; do only after everything above. Often auto-created — just check the NAP matches. |

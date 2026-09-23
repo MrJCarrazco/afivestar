@@ -1,4 +1,4 @@
-# A Five Star — WHAT'S LIVE
+# A Five Drywall — WHAT'S LIVE
 *Updated: 2026-09-15*
 
 Site root: **https://mrjcarrazco.github.io/afivestar/** (GitHub Pages, repo MrJCarrazco/afivestar)
@@ -20,7 +20,7 @@ Site root: **https://mrjcarrazco.github.io/afivestar/** (GitHub Pages, repo MrJC
 All pages: quote form (FormSubmit → afivedrywall@gmail.com, ACTIVATED by Juan), click-to-call (907) 205-6902, sticky Call FAB, Service/LocalBusiness JSON-LD, sitemap.xml current.
 
 ## Form UX (shipped 9/15)
-- `_subject` = "New estimate request — A Five Star website" on all 9 forms
+- `_subject` = "New estimate request — A Five Drywall website" on all 9 forms
 - `_next` → on-site /thanks.html (bilingual thank-you + tel link) — no more FormSubmit-branded thank-you page
 - `_captcha=false`, `_template=table` where present
 

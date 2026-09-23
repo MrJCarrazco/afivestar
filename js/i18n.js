@@ -1,10 +1,35 @@
-/* A Five Star — bilingual EN/ES toggle (vanilla JS, no dependencies).
+/* A Five Drywall — bilingual EN/ES toggle (vanilla JS, no dependencies).
    Walks visible text nodes and placeholder attributes; tags each translated
    element with data-i18n so coverage is inspectable in devtools. */
 (function () {
   "use strict";
 
   var DICT = {
+  "The Craft": "El Oficio",
+  "Every Stage, Done Right": "Cada Etapa, Bien Hecha",
+  "Hanging, taping, mudding, and finishing — the same careful process on every job, from a single patch to a whole house.": "Instalación, encintado, empastado y acabado — el mismo proceso cuidadoso en cada trabajo, desde un solo parche hasta una casa completa.",
+  "Precise Hanging": "Instalación Precisa",
+  "Panels set square and tight, every screw to spec.": "Planchas a escuadra y ajustadas, cada tornillo según especificación.",
+  "Clean Taping & Mudding": "Encintado y Empastado Limpio",
+  "Wide, feathered coats that stay invisible after paint.": "Capas anchas y difuminadas que quedan invisibles tras la pintura.",
+  "Ceilings & Corners": "Techos y Esquinas",
+  "The hard angles most crews rush — finished right.": "Los ángulos difíciles que muchos apuran — terminados bien.",
+  "Process photos are illustrative stock imagery — real Alaska project photos coming soon.": "Las fotos del proceso son imágenes ilustrativas de archivo — pronto habrá fotos de proyectos reales en Alaska.",
+  "On the Job": "En la Obra",
+  "The Work, Up Close": "El Trabajo, de Cerca",
+  "Measuring, hanging, taping, mudding, and finishing — every stage of the trade done with care.": "Medición, instalación, encintado, empastado y acabado — cada etapa del oficio hecha con cuidado.",
+  "Measure Twice": "Medir Dos Veces",
+  "Layout planned to minimize joints and waste.": "Distribución planificada para minimizar juntas y desperdicio.",
+  "Hang It Tight": "Instalación Firme",
+  "Fastened to spec so screws never pop later.": "Fijado según especificación para que los tornillos nunca salten.",
+  "Straight & True": "Recto y a Plomo",
+  "Checked with a straightedge before finishing starts.": "Verificado con regla antes de comenzar el acabado.",
+  "Mud & Tape": "Pasta y Cinta",
+  "Wide, feathered passes for invisible seams.": "Pasadas anchas y difuminadas para juntas invisibles.",
+  "Ceiling Seams": "Juntas de Techo",
+  "Overhead work finished as carefully as eye-level walls.": "Trabajo en altura terminado con el mismo cuidado que las paredes a la vista.",
+  "Smooth Finish": "Acabado Liso",
+  "Sanded and checked under work lights — paint-ready.": "Lijado y verificado bajo luces de trabajo — listo para pintar.",
   "Sheetrock Installation — Mat-Su": "Instalación de Sheetrock — Mat-Su",
   "Water Damage Repair — Wasilla & Big Lake": "Reparación por Daños de Agua — Wasilla y Big Lake",
   "Mat-Su Valley, Alaska": "Valle Mat-Su, Alaska",
@@ -88,7 +113,7 @@
   "Free Estimate": "Presupuesto Gratis",
   "On-Time Crews": "Cuadrillas Puntuales",
   "Licensed · Bonded · Insured": "Con licencia · Con fianza · Asegurados",
-  "© 2026 A Five Star. All rights reserved.": "© 2026 A Five Star. Todos los derechos reservados.",
+  "© 2026 A Five Drywall. All rights reserved.": "© 2026 A Five Drywall. Todos los derechos reservados.",
   "Pages": "Páginas",
   "Service Area": "Área de Servicio",
   "Wasilla & Palmer": "Wasilla y Palmer",
@@ -100,7 +125,7 @@
   "Straight walls. Clean seams.": "Paredes rectas. Juntas limpias.",
   "Five-star drywall": "Drywall de cinco estrellas",
   ", done right.": ", hecho como debe ser.",
-  "From new construction hangs to flawless level 5 finishes and seamless repairs, A Five Star brings experienced sheetrock crews to jobs across the Mat-Su Valley, Anchorage, and all of Alaska.": "Desde instalaciones en obra nueva hasta acabados nivel 5 impecables y reparaciones invisibles, A Five Star lleva cuadrillas expertas en Sheetrock a proyectos en el Valle Mat-Su, Anchorage y toda Alaska.",
+  "From new construction hangs to flawless level 5 finishes and seamless repairs, A Five Drywall brings experienced sheetrock crews to jobs across the Mat-Su Valley, Anchorage, and all of Alaska.": "Desde instalaciones en obra nueva hasta acabados nivel 5 impecables y reparaciones invisibles, A Five Drywall lleva cuadrillas expertas en Sheetrock a proyectos en el Valle Mat-Su, Anchorage y toda Alaska.",
   "Get a Free Estimate": "Solicite un Presupuesto Gratis",
   "What We Do": "Lo Que Hacemos",
   "Complete Drywall Services": "Servicios Completos de Drywall",

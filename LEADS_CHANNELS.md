@@ -1,6 +1,6 @@
-# A Five Star — Lead Channels Research & Ranking
+# A Five Drywall — Lead Channels Research & Ranking
 *Prep-only research, September 15, 2026. No accounts created, no contact made, no money spent — everything below is ready for Juan to execute.*
-*Business: A Five Star Drywall · Wasilla/Mat-Su, AK · (907) 205-6902 · afivedrywall@gmail.com · https://mrjcarrazco.github.io/afivestar/*
+*Business: A Five Drywall · Wasilla/Mat-Su, AK · (907) 205-6902 · afivedrywall@gmail.com · https://mrjcarrazco.github.io/afivestar/*
 
 ---
 
@@ -35,7 +35,7 @@
 - Search: "Wasilla classifieds", "Palmer AK buy sell", "Big Lake Alaska community"
 
 **Exact steps for Juan:**
-1. From his personal Facebook, create a **Business Page**: "A Five Star Drywall — Wasilla, AK". Add logo (in repo `assets/`), phone, site link, service area. ~15 min.
+1. From his personal Facebook, create a **Business Page**: "A Five Drywall — Wasilla, AK". Add logo (in repo `assets/`), phone, site link, service area. ~15 min.
 2. Join the 4–6 groups above (some ask screening questions — answer as a local resident/business). ~10 min, approval may take days.
 3. First post per group (where self-promo is allowed): 2–3 job photos + 2 lines: *"Family-run drywall crew based in Wasilla — repairs, texture matching, full hang/tape/finish. Se habla español. Free estimates: (907) 205-6902."* Link the site.
 4. Turn on notifications for the groups; **reply to "looking for drywall" posts within the hour** — that's where the real leads are.
@@ -52,7 +52,7 @@ Free. Also doubles as a citation (already listed in CITATIONS_AND_NAP.md).
 
 **Steps (verified from business.nextdoor.com):**
 1. Go to **nextdoor.com/create-business** (or from an existing neighbor account: profile photo → "Add Business Page").
-2. Enter business name ("A Five Star Drywall"), category (Drywall/Home Improvement — up to 10 categories), address (can be **hidden** for home-based — leave "show address" unchecked), phone, email, website.
+2. Enter business name ("A Five Drywall"), category (Drywall/Home Improvement — up to 10 categories), address (can be **hidden** for home-based — leave "show address" unchecked), phone, email, website.
 3. Add logo + cover photo (finished-wall photo). Pages with a logo get ~7× more views; with a photo gallery ~2.6×.
 4. Add license # in the profile (trust signal Nextdoor explicitly recommends).
 5. Write the "story": family business, Wasilla, bilingual EN/ES.

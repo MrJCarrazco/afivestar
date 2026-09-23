@@ -1,4 +1,4 @@
-/* A Five Star — site interactions (vanilla JS, no dependencies) */
+/* A Five Drywall — site interactions (vanilla JS, no dependencies) */
 (function () {
   "use strict";
 

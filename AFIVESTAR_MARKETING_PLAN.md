@@ -1,4 +1,4 @@
-# A Five Star — Online Lead Machine Plan
+# A Five Drywall — Online Lead Machine Plan
 *Family drywall business · Wasilla / Mat-Su Valley, Alaska*
 *Site: https://mrjcarrazco.github.io/afivestar/ · Email: afivedrywall@gmail.com · Phone: (907) 205-6902*
 *Prepared: September 2026. Goal = QUOTE REQUESTS, not pageviews. Zero ad spend.*
@@ -34,7 +34,7 @@ Don't fight Image head-on for "drywall Wasilla" — win the map pack and the lon
 ## 2. Local SEO Pack
 
 ### a) Google Business Profile — see `GBP_RUNBOOK.md` (step-by-step, Juan does this himself; requires his Google sign-in)
-This is the single highest-leverage action. A verified GBP puts A Five Star on Google Maps and in the local 3-pack — where most "drywall near me" clicks actually go.
+This is the single highest-leverage action. A verified GBP puts A Five Drywall on Google Maps and in the local 3-pack — where most "drywall near me" clicks actually go.
 
 ### b) Citations — see `CITATIONS_AND_NAP.md`
 Free directory listings that Google cross-checks. Order of importance for an AK contractor: Google Business Profile → Bing Places → Yelp → BBB → Nextdoor → Angi/HomeAdvisor (free tier) → Alaska-specific (Alaska Job/contractor directories, Mat-Su Chamber when budget allows).
