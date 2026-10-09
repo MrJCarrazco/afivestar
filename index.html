@@ -20,7 +20,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2323A04F'/%3E%3Cstop offset='1' stop-color='%230F5132'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cpolygon points='32.00,8.00 37.05,22.04 51.97,22.51 40.18,31.66 44.34,45.99 32.00,37.60 19.66,45.99 23.82,31.66 12.03,22.51 26.95,22.04' fill='%23F5C518' stroke='%230A3B24' stroke-width='1' stroke-linejoin='round'/%3E%3Crect x='15' y='48' width='34' height='8' rx='4' fill='none' stroke='white' stroke-width='2'/%3E%3Cline x1='26' y1='49' x2='26' y2='55' stroke='white' stroke-width='1.6'/%3E%3Cline x1='38' y1='49' x2='38' y2='55' stroke='white' stroke-width='1.6'/%3E%3Ccircle cx='32' cy='52' r='2.4' fill='%23F5C518'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
 <link rel="stylesheet" href="css/styles.css">
 <script type="application/ld+json">
 {
@@ -173,6 +174,9 @@
         <circle class="anim-dust" cx="300" cy="330" r="5" fill="#e9e2cd"/>
         <circle class="anim-dust-2" cx="330" cy="338" r="4" fill="#e9e2cd"/>
         <circle class="anim-dust-3" cx="272" cy="336" r="3.5" fill="#e9e2cd"/>
+        <circle class="anim-dust-4" cx="210" cy="332" r="3" fill="#e9e2cd"/>
+        <circle class="anim-dust-5" cx="420" cy="334" r="4" fill="#e9e2cd"/>
+        <circle class="anim-dust-6" cx="368" cy="340" r="2.8" fill="#e9e2cd"/>
         <!-- work light glow -->
         <circle class="anim-glow" cx="470" cy="70" r="22" fill="#f5c518" opacity="0.5"/>
         <rect x="462" y="90" width="16" height="34" rx="4" fill="#33594a"/>
@@ -182,6 +186,13 @@
     </div>
   </div>
 </section>
+
+<!-- Signature: level-5 smooth-finish band (decorative) -->
+<div class="finish-band" aria-hidden="true">
+  <div class="finish-smooth"></div>
+  <svg class="finish-trowel" viewBox="0 0 74 40"><rect x="4" y="22" width="66" height="7" rx="3" fill="#d8e5dc" stroke="#9ab5a4" stroke-width="1.5"/><rect x="30" y="4" width="12" height="20" rx="5" fill="#f5c518"/></svg>
+  <span class="finish-label"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01z"/></svg>Level 5 finish</span>
+</div>
 
 <!-- ================= TRUST STRIP ================= -->
 <div class="trust-strip">
@@ -576,6 +587,10 @@
   Call Now
 </a>
 
+<script>
+(function(){function go(){var els=document.querySelectorAll('.reveal');for(var i=0;i<els.length;i++){els[i].className+=' in'}}
+if(window.addEventListener){window.addEventListener('load',function(){setTimeout(go,2000)});setTimeout(go,4000)}else{setTimeout(go,4000)}})();
+</script>
 <script src="js/main.js"></script>
 <script src="js/i18n.js"></script>
 </body>
