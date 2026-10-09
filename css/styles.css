@@ -1007,3 +1007,157 @@ details.faq[open] .faq-body{animation:faq-open .4s var(--ease) backwards}
 /* --- Form focus micro-lift --- */
 label.field input,label.field select,label.field textarea{transition:border-color .2s,box-shadow .2s,transform .2s}
 label.field input:focus,label.field select:focus,label.field textarea:focus{transform:translateY(-1px)}
+
+
+/* ============================================================
+   DETAIL + GRAPHICS v4 — wall-builder scroll story, looping
+   service vignettes, self-drawing process timeline, honest
+   animated stats, blueprint micro-detail layer.
+   Hidden states are html.js-gated; html.anim-fallback (set by
+   the inline net when main.js never ran) restores final states.
+   Global prefers-reduced-motion rule kills all motion; explicit
+   overrides below pin final states visible.
+   ============================================================ */
+
+/* ---------- 1. Wall-builder scroll story (index signature) ---------- */
+.wb{position:relative;background:linear-gradient(180deg,var(--green-deep) 0%,#0d4229 45%,var(--green-deep) 100%);color:var(--mint)}
+.wb-wrap{position:relative}
+html.js .wb:not(.wb-done) .wb-wrap{height:340vh}
+.wb-stage{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 18px}
+html.js .wb:not(.wb-done) .wb-stage{position:sticky;top:0;height:100vh;padding:0 18px;overflow:hidden}
+.wb .kicker{color:var(--gold)}
+.wb h2{color:var(--white);margin-bottom:.2rem}
+.wb-svg{width:min(560px,92vw);height:auto;margin-top:12px;filter:drop-shadow(0 18px 40px rgba(0,0,0,.35))}
+.wb-cap-rail{position:relative;height:3.4em;width:min(560px,92vw);margin-top:10px}
+.wb-cap{position:absolute;top:0;left:0;right:0;margin:0;color:#ffe89a;font-weight:700;font-size:clamp(.95rem,2.4vw,1.15rem);line-height:1.4;opacity:0;transform:translateY(8px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.wb-cap:last-child{opacity:1;transform:none}
+html.js .wb-cap:last-child{opacity:0;transform:translateY(8px)}
+.wb .wb-cap.on{opacity:1!important;transform:none!important}
+.wb.wb-done .wb-cap:last-child{opacity:1!important;transform:none!important}
+.wb-hint{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(191,220,203,.6);margin-top:12px;transition:opacity .4s}
+.wb-hint::after{content:"\2193";display:block;margin-top:4px;animation:wb-bob 1.6s var(--ease-soft) infinite}
+.wb-hint.off{opacity:0}
+html.js .wb.wb-done .wb-hint{display:none}
+@keyframes wb-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+/* layers: visible by default (no-JS final state); hidden only under html.js until .on */
+.wb-svg .wb-lyr{transform-box:fill-box;transform-origin:center}
+html.js .wb .wb-lyr{opacity:0;transition:opacity .55s var(--ease),transform .65s var(--ease-spring)}
+html.js .wb .wb-l-ins{transform:translateY(-26px)}
+html.js .wb .wb-l-panel{transform:translateY(54px)}
+html.js .wb .wb-l-screws{transform:scale(.82)}
+html.js .wb .wb-l-tape{transform:translateY(-18px)}
+html.js .wb .wb-l-sand{transform:translateX(-20px)}
+.wb .wb-lyr.on,.wb.wb-done .wb-lyr,html.anim-fallback .wb .wb-lyr{opacity:1!important;transform:none!important}
+/* mud: three passes feather out from the seam */
+.wb .wb-mudpass{transform-box:fill-box;transform-origin:left center}
+html.js .wb .wb-mudpass{transform:scaleX(0);transition:transform .9s var(--ease-soft)}
+.wb .wb-l-mud.on .wb-mudpass,.wb.wb-done .wb-mudpass,html.anim-fallback .wb .wb-mudpass{transform:scaleX(1)!important}
+.wb .wb-l-mud.on .wb-m2{transition-delay:.4s}
+.wb .wb-l-mud.on .wb-m3{transition-delay:.8s}
+/* sanding: sander drifts, dust puffs rise */
+.wb-sander{animation:wb-sand 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes wb-sand{0%,100%{transform:translateX(0)}50%{transform:translateX(34px)}}
+.wb-puff{opacity:0;animation:wb-puff 2.6s ease-out infinite}
+.wb-puff2{animation-delay:.9s}
+.wb-puff3{animation-delay:1.7s}
+@keyframes wb-puff{0%{opacity:0;transform:translateY(0)}25%{opacity:.75}100%{opacity:0;transform:translateY(-26px)}}
+/* level-5 finish: light sweep across the painted wall */
+.wb-sheen{opacity:0}
+.wb .wb-l-fin.on .wb-sheen,.wb.wb-done .wb-sheen{opacity:1;animation:wb-sweep 3.8s var(--ease-soft) infinite}
+@keyframes wb-sweep{0%{transform:translateX(0)}60%{transform:translateX(640px)}100%{transform:translateX(640px)}}
+@media (prefers-reduced-motion: reduce){
+  .wb .wb-lyr{opacity:1!important;transform:none!important}
+  .wb .wb-mudpass{transform:scaleX(1)!important}
+  .wb-cap:last-child{opacity:1!important;transform:none!important}
+}
+
+/* ---------- 2. Service vignettes (looping SVG scenes) ---------- */
+.vig{position:relative;margin:0 0 16px;border-radius:10px;overflow:hidden;background:linear-gradient(165deg,#11402a,#0a3b24);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.vig svg{display:block;width:100%;height:auto}
+.vig .vg{animation-play-state:paused}
+.vig.run .vg{animation-play-state:running}
+.vig-row{max-width:380px}
+.vg-lift{animation:vg-lift 5.5s var(--ease) infinite}
+@keyframes vg-lift{0%{transform:translateY(46px);opacity:0}18%{opacity:1}38%{transform:translateY(-3px)}48%{transform:translateY(0)}86%{transform:translateY(0);opacity:1}94%{opacity:0;transform:translateY(0)}100%{transform:translateY(46px);opacity:0}}
+.vg-knife{animation:vg-knife 6s var(--ease-soft) infinite}
+@keyframes vg-knife{0%,10%{transform:translateY(0);opacity:1}70%{transform:translateY(112px);opacity:1}88%{transform:translateY(112px);opacity:1}94%{opacity:0}100%{transform:translateY(0);opacity:0}}
+.vg-mud{transform-box:fill-box;transform-origin:center top;animation:vg-mud 6s var(--ease-soft) infinite}
+@keyframes vg-mud{0%,10%{transform:scaleY(0);opacity:1}70%{transform:scaleY(1);opacity:1}88%{transform:scaleY(1);opacity:1}94%{opacity:0}100%{transform:scaleY(0);opacity:0}}
+.vg-gun{animation:vg-gun 5.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes vg-gun{0%,100%{transform:translateY(0)}25%{transform:translateY(-14px)}75%{transform:translateY(12px)}}
+.vg-spray{animation:vg-spray 1.3s linear infinite}
+@keyframes vg-spray{0%,100%{opacity:.15}50%{opacity:.6}}
+.vg-dot{animation:vg-stip 5.2s linear infinite}
+@keyframes vg-stip{0%,8%{opacity:0}16%{opacity:1}78%{opacity:1}92%,100%{opacity:0}}
+.vg-crack{stroke-dasharray:150;animation:vg-heal 6.5s var(--ease-soft) infinite}
+@keyframes vg-heal{0%,35%{stroke-dashoffset:0;opacity:1}65%{stroke-dashoffset:150;opacity:1}66%,100%{stroke-dashoffset:150;opacity:0}}
+.vg-patch{animation:vg-patch 6.5s var(--ease-soft) infinite}
+@keyframes vg-patch{0%,30%{opacity:0}55%{opacity:1}90%{opacity:1}100%{opacity:0}}
+.vg-spark{animation:vg-spark 6.5s var(--ease-soft) infinite;transform-box:fill-box;transform-origin:center}
+@keyframes vg-spark{0%,60%{opacity:0;transform:scale(.4)}70%{opacity:1;transform:scale(1.15)}78%{transform:scale(1)}88%{opacity:1}100%{opacity:0;transform:scale(.4)}}
+.vg-smooth{transform-box:fill-box;transform-origin:left center;animation:vg-smooth 6s var(--ease-soft) infinite}
+@keyframes vg-smooth{0%,10%{transform:scaleX(0);opacity:1}68%{transform:scaleX(1);opacity:1}92%{transform:scaleX(1);opacity:1}97%{opacity:0}100%{transform:scaleX(0);opacity:0}}
+.vg-trowel{animation:vg-trowel 6s var(--ease-soft) infinite}
+@keyframes vg-trowel{0%,10%{transform:translateX(0);opacity:1}68%{transform:translateX(176px);opacity:1}88%{transform:translateX(176px);opacity:1}94%{opacity:0}100%{transform:translateX(0);opacity:0}}
+.vg-house{stroke-dasharray:360;animation:vg-draw 7s var(--ease-soft) infinite}
+@keyframes vg-draw{0%{stroke-dashoffset:360;opacity:1}45%{stroke-dashoffset:0;opacity:1}85%{stroke-dashoffset:0;opacity:1}95%{opacity:0}100%{stroke-dashoffset:360;opacity:0}}
+.vg-fillin{animation:vg-fillin 7s var(--ease-soft) infinite}
+@keyframes vg-fillin{0%,45%{opacity:0}60%{opacity:1}85%{opacity:1}95%,100%{opacity:0}}
+.vg-drop{animation:vg-drop 3.8s var(--ease-soft) infinite;transform-box:fill-box;transform-origin:center}
+@keyframes vg-drop{0%{transform:translateY(-44px);opacity:0}18%{opacity:1}48%{transform:translateY(0) scale(1)}56%{transform:translateY(0) scale(1.25,.7);opacity:1}62%{opacity:0}100%{transform:translateY(-44px);opacity:0}}
+.vg-shieldp{animation:vg-shield 3.8s ease-in-out infinite}
+@keyframes vg-shield{0%,45%{opacity:.5}56%{opacity:1}75%,100%{opacity:.5}}
+
+/* ---------- 3. Self-drawing process timeline ---------- */
+.tl-rail{position:relative;height:34px;margin:30px 4% 0}
+.tl-svg{position:absolute;left:0;right:0;top:14px;width:100%;height:6px;display:block;overflow:visible}
+.tl-path{stroke-dashoffset:0}
+html.js .tl-path{stroke-dashoffset:992}
+.tl-dot{position:absolute;top:8px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffe89a,var(--gold-cta) 60%,#caa10f);box-shadow:0 0 0 3px rgba(245,197,24,.25),0 4px 10px rgba(0,0,0,.35);transition:transform .45s var(--ease-spring)}
+html.js .tl-dot{transform:scale(0)}
+.tl-rail .tl-dot.on{transform:scale(1)}
+html.anim-fallback .tl-path{stroke-dashoffset:0}
+html.anim-fallback .tl-dot{transform:scale(1)}
+@media (prefers-reduced-motion: reduce){.tl-path{stroke-dashoffset:0!important}.tl-dot{transform:scale(1)!important}}
+@media (max-width:640px){.tl-rail{display:none}}
+
+/* ---------- 4. Honest animated stats ---------- */
+.stats-band{position:relative;background:linear-gradient(170deg,#0a3b24 0%,#0d4229 55%,#082e1c 100%);padding:70px 0;color:var(--mint);overflow:hidden}
+.stats-band::after{content:"";position:absolute;top:-40%;right:-10%;width:50%;height:180%;background:radial-gradient(closest-side,rgba(245,197,24,.09),rgba(245,197,24,0));transform:rotate(14deg);pointer-events:none}
+.stats-band .container{position:relative;z-index:1}
+.stats-band .kicker{color:var(--gold)}
+.stats-band h2{color:var(--white)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:34px}
+.stat{text-align:left;padding:18px 20px;border-left:3px solid rgba(245,197,24,.55);background:rgba(255,255,255,.04);border-radius:0 12px 12px 0}
+.stat-num{font-family:"Archivo","Poppins","Segoe UI",Arial,sans-serif;font-weight:900;font-size:clamp(2.2rem,5vw,3.3rem);line-height:1;color:var(--gold-cta);display:flex;align-items:baseline;gap:5px}
+.stat-num .stat-pre{font-size:.42em;font-weight:800;color:var(--mint);letter-spacing:.06em}
+.stat-num .stat-mark{color:#ffe89a;font-size:.6em}
+.stat p{margin-top:10px;font-size:.92rem;color:var(--mint);line-height:1.5}
+@media (max-width:900px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.stats-grid{grid-template-columns:1fr 1fr;gap:14px}.stat{padding:14px}}
+
+/* ---------- 5. Micro-detail layer ---------- */
+/* Blueprint corner accents on every section container */
+.section>.container{position:relative}
+.section>.container::before,.section>.container::after{content:"";position:absolute;width:30px;height:30px;pointer-events:none;opacity:.5}
+.section>.container::before{top:-4px;left:12px;border-top:2px solid var(--accent);border-left:2px solid var(--accent);transform-origin:top left}
+.section>.container::after{bottom:-4px;right:12px;border-bottom:2px solid var(--gold-cta);border-right:2px solid var(--gold-cta);transform-origin:bottom right}
+.section-dark>.container::before{border-color:rgba(245,197,24,.8)}
+html.js .section>.container::before,html.js .section>.container::after{transform:scale(0);transition:transform .8s var(--ease) .15s}
+html.js .section.sec-in>.container::before,html.js .section.sec-in>.container::after{transform:scale(1)}
+html.anim-fallback .section>.container::before,html.anim-fallback .section>.container::after{transform:scale(1)}
+@media (prefers-reduced-motion: reduce){.section>.container::before,.section>.container::after{transform:scale(1)!important}}
+/* Animated gold underline on nav links */
+.nav-links a{position:relative}
+.nav-links a:not(.nav-cta)::after{content:"";position:absolute;left:12px;right:12px;bottom:5px;height:2px;border-radius:1px;background:linear-gradient(90deg,var(--gold-cta),#ffe89a);transform:scaleX(0);transform-origin:left center;transition:transform .32s var(--ease)}
+.nav-links a:not(.nav-cta):hover::after,.nav-links a.active:not(.nav-cta)::after{transform:scaleX(1)}
+/* Before/after divider: shimmer edge */
+.ba-line{overflow:hidden}
+.ba-line::after{content:"";position:absolute;top:0;bottom:0;left:0;width:100%;background:linear-gradient(180deg,rgba(255,216,77,0) 0%,rgba(255,216,77,.95) 45%,rgba(255,216,77,.95) 55%,rgba(255,216,77,0) 100%);background-size:100% 46%;background-repeat:no-repeat;animation:ba-shimmer 3s var(--ease-soft) infinite}
+@keyframes ba-shimmer{0%{background-position:0 -60%}100%{background-position:0 160%}}
+/* Footer: slow drifting dust field (canvas injected by main.js) */
+.site-footer{position:relative;overflow:hidden}
+.site-footer>.container{position:relative;z-index:1}
+.dust-soft{opacity:.4}
+/* Gentle float parallax */
+[data-float]{will-change:transform}

@@ -294,7 +294,25 @@
   "Remodel / addition": "Remodelación / ampliación",
   "Not sure — need advice": "No estoy seguro — necesito asesoría",
   "Room sizes, timeline, photos to follow by email — anything helps": "Tamaños de ambientes, plazos, fotos por correo — todo ayuda",
-  "Tell us what you're building or fixing and we'll respond with a straight answer. Prefer to talk? Call": "Cuéntenos qué está construyendo o reparando y le responderemos con una respuesta directa. ¿Prefiere hablar? Llame al"
+  "Tell us what you're building or fixing and we'll respond with a straight answer. Prefer to talk? Call": "Cuéntenos qué está construyendo o reparando y le responderemos con una respuesta directa. ¿Prefiere hablar? Llame al",
+  "Scroll — Watch the Wall Go Up": "Desplácese — Vea Cómo Se Levanta la Pared",
+  "How a Five-Star Wall Is Built": "Cómo Se Construye una Pared de Cinco Estrellas",
+  "Keep scrolling": "Siga desplazándose",
+  "Bare studs — every wall starts square and plumb.": "Montantes desnudos — toda pared comienza a escuadra y a plomo.",
+  "Insulation tucked tight for Alaska winters.": "Aislamiento bien ajustado para los inviernos de Alaska.",
+  "Sheetrock hung tight, the right board for the room.": "Sheetrock instalado firme, con el panel correcto para el ambiente.",
+  "Every screw set to spec — no pops later.": "Cada tornillo según especificación — sin saltarse después.",
+  "Seams taped straight and true.": "Juntas encintadas rectas y precisas.",
+  "Three coats of mud, feathered wide.": "Tres capas de pasta, difuminadas anchas.",
+  "Sanded smooth under work lights.": "Lijado fino bajo luces de trabajo.",
+  "Level 5 finish — paint-ready, five-star smooth.": "Acabado nivel 5 — listo para pintar, liso de cinco estrellas.",
+  "The Five-Star Standard": "El Estándar de Cinco Estrellas",
+  "The Numbers Behind the Name": "Los Números Detrás del Nombre",
+  "Star finish standard": "Estrellas de estándar de acabado",
+  "Highest finish level we deliver": "El nivel de acabado más alto que entregamos",
+  "Alaska communities served by name": "Comunidades de Alaska servidas por nombre",
+  "Crew from first board to final coat": "Cuadrilla de la primera plancha a la última capa",
+  "Level": "Nivel"
 };
 
   var STORE_KEY = "afs-lang";

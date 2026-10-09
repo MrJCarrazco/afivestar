@@ -120,7 +120,9 @@
 </a>
 
 <script>
-(function(){function go(){var els=document.querySelectorAll('.reveal');for(var i=0;i<els.length;i++){els[i].className+=' in'}}
+(function(){function go(){var els=document.querySelectorAll('.reveal');for(var i=0;i<els.length;i++){els[i].className+=' in'}
+var d=document.documentElement;if((' '+d.className+' ').indexOf(' mjs-ok ')===-1){if((' '+d.className+' ').indexOf(' anim-fallback ')===-1){d.className+=' anim-fallback'}
+var wb=document.getElementById('wallbuilder');if(wb&&(' '+wb.className+' ').indexOf(' wb-live ')===-1&&(' '+wb.className+' ').indexOf(' wb-done ')===-1){wb.className+=' wb-done'}}}
 if(window.addEventListener){window.addEventListener('load',function(){setTimeout(go,2000)});setTimeout(go,4000)}else{setTimeout(go,4000)}})();
 </script>
 <script src="js/main.js"></script>

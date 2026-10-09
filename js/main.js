@@ -151,9 +151,10 @@
   // Drifting drywall-dust motes in the hero light (canvas, injected)
   try {
     if (!media.matches) {
-      document.querySelectorAll(".hero, .page-hero").forEach(function (hero) {
+      document.querySelectorAll(".hero, .page-hero, .site-footer").forEach(function (hero) {
         var canvas = document.createElement("canvas");
         canvas.className = "dust-canvas";
+        if ((" " + hero.className + " ").indexOf(" site-footer ") > -1) canvas.className += " dust-soft";
         canvas.setAttribute("aria-hidden", "true");
         hero.insertBefore(canvas, hero.firstChild);
         var ctx = canvas.getContext("2d");
@@ -228,5 +229,153 @@
       });
     }
   } catch (e) { /* decorative */ }
+
+  /* ===== Detail + graphics kit v4 (all decorative; each block fails safe) ===== */
+
+  // Signature: wall-builder scroll story (index)
+  try {
+    var wbEl = document.getElementById("wallbuilder");
+    if (wbEl) {
+      var wbWrap = wbEl.querySelector(".wb-wrap");
+      var wbLyrs = wbEl.querySelectorAll(".wb-lyr");
+      var wbCaps = wbEl.querySelectorAll(".wb-cap");
+      var wbHint = wbEl.querySelector(".wb-hint");
+      if (media.matches || !wbWrap) {
+        wbEl.className += " wb-done";
+      } else {
+        wbEl.className += " wb-live";
+        var wbTick = function () {
+          var rect = wbWrap.getBoundingClientRect();
+          var total = rect.height - window.innerHeight;
+          var p = total > 0 ? -rect.top / total : 1;
+          p = Math.max(0, Math.min(1, p));
+          var i, active = -1;
+          for (i = 0; i < wbLyrs.length; i++) {
+            wbLyrs[i].classList.toggle("on", p >= parseFloat(wbLyrs[i].getAttribute("data-at") || "0"));
+          }
+          for (i = 0; i < wbCaps.length; i++) {
+            if (p >= parseFloat(wbCaps[i].getAttribute("data-at") || "0")) active = i;
+          }
+          for (i = 0; i < wbCaps.length; i++) wbCaps[i].classList.toggle("on", i === active);
+          if (wbHint) wbHint.classList.toggle("off", p > 0.92);
+        };
+        window.addEventListener("scroll", wbTick, { passive: true });
+        window.addEventListener("resize", wbTick);
+        wbTick();
+      }
+    }
+  } catch (e) { /* decorative */ }
+
+  // Service vignettes: run looping scenes only while on screen
+  try {
+    var vigs = document.querySelectorAll(".vig");
+    if (vigs.length) {
+      if ("IntersectionObserver" in window && !media.matches) {
+        var vio = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            en.target.classList.toggle("run", en.isIntersecting);
+          });
+        }, { threshold: 0.15 });
+        vigs.forEach(function (v) { vio.observe(v); });
+      } else {
+        vigs.forEach(function (v) { v.classList.add("run"); });
+      }
+    }
+  } catch (e) { /* decorative */ }
+
+  // Process timeline: connecting line draws in, dots pop as reached
+  try {
+    var rail = document.querySelector(".tl-rail");
+    if (rail) {
+      var tlPath = rail.querySelector(".tl-path");
+      var tlDots = rail.querySelectorAll(".tl-dot");
+      var tlLen = 992;
+      if (media.matches) {
+        if (tlPath) tlPath.style.strokeDashoffset = "0";
+        for (var td = 0; td < tlDots.length; td++) tlDots[td].classList.add("on");
+      } else {
+        var tlTick = function () {
+          var r = rail.getBoundingClientRect();
+          var vh = window.innerHeight;
+          var p = (vh * 0.88 - r.top) / (vh * 0.55);
+          p = Math.max(0, Math.min(1, p));
+          if (tlPath) tlPath.style.strokeDashoffset = String(tlLen * (1 - p));
+          for (var i = 0; i < tlDots.length; i++) {
+            tlDots[i].classList.toggle("on", p >= (i + 0.6) / tlDots.length);
+          }
+        };
+        window.addEventListener("scroll", tlTick, { passive: true });
+        window.addEventListener("resize", tlTick);
+        tlTick();
+      }
+    }
+  } catch (e) { /* decorative */ }
+
+  // Honest stat counters (HTML already holds the final value; JS only animates)
+  try {
+    var counts = document.querySelectorAll("[data-count]");
+    if (counts.length && "IntersectionObserver" in window && window.requestAnimationFrame && !media.matches) {
+      var runCount = function (el) {
+        var target = parseFloat(el.getAttribute("data-count")) || 0;
+        var t0 = null;
+        var stepFn = function (t) {
+          if (!t0) t0 = t;
+          var p = Math.min((t - t0) / 1300, 1);
+          var ease = 1 - Math.pow(1 - p, 3);
+          el.textContent = String(Math.round(target * ease));
+          if (p < 1) window.requestAnimationFrame(stepFn);
+        };
+        window.requestAnimationFrame(stepFn);
+      };
+      var cio = new IntersectionObserver(function (es) {
+        es.forEach(function (en) {
+          if (en.isIntersecting) { cio.unobserve(en.target); runCount(en.target); }
+        });
+      }, { threshold: 0.1 });
+      counts.forEach(function (el) { cio.observe(el); });
+    }
+  } catch (e) { /* decorative */ }
+
+  // Blueprint corner accents: draw in when a section enters
+  try {
+    var secs = document.querySelectorAll(".section");
+    if (secs.length) {
+      if ("IntersectionObserver" in window) {
+        var seco = new IntersectionObserver(function (es) {
+          es.forEach(function (en) {
+            if (en.isIntersecting) { en.target.classList.add("sec-in"); seco.unobserve(en.target); }
+          });
+        }, { threshold: 0.08 });
+        secs.forEach(function (s) { seco.observe(s); });
+      } else {
+        for (var sc = 0; sc < secs.length; sc++) secs[sc].classList.add("sec-in");
+      }
+    }
+  } catch (e) { /* decorative */ }
+
+  // Gentle float parallax on flat sections (centers at viewport middle)
+  try {
+    var floats = document.querySelectorAll("[data-float]");
+    if (floats.length && !media.matches) {
+      var fActive = false;
+      var fTick = function () {
+        floats.forEach(function (el) {
+          var r = el.getBoundingClientRect();
+          var mid = r.top + r.height / 2 - window.innerHeight / 2;
+          var d = parseFloat(el.getAttribute("data-float")) || 14;
+          var y = Math.max(-d, Math.min(d, (-mid / window.innerHeight) * 2 * d));
+          el.style.transform = "translateY(" + y.toFixed(1) + "px)";
+        });
+        fActive = false;
+      };
+      window.addEventListener("scroll", function () {
+        if (!fActive) { fActive = true; window.requestAnimationFrame(fTick); }
+      }, { passive: true });
+      fTick();
+    }
+  } catch (e) { /* decorative */ }
+
+  // Marker for the inline fallback net: main.js ran to completion
+  try { document.documentElement.className += " mjs-ok"; } catch (e) { /* decorative */ }
 
 })();
