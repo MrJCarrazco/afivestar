@@ -1,3 +1,13 @@
 nim_proofread_*.json
 assets/_logo_preview.html
 *.v*-backup
+
+# Internal ops/strategy notes - GitHub Pages serves EVERY tracked file, so these
+# must never be committed to a live client site (removed from publication 2026-10-16).
+AFIVESTAR_MARKETING_PLAN.md
+CITATIONS_AND_NAP.md
+GBP_RUNBOOK.md
+LEADS_CHANNELS.md
+PLACEHOLDERS.md
+REVIEW_ASK_TEMPLATES.md
+WHATS_LIVE.md
