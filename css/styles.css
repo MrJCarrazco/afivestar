@@ -184,7 +184,7 @@ h3 { font-size: 1.2rem; }
 .lang-toggle:hover { background: rgba(255, 255, 255, 0.16); }
 .lang-toggle:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .lang-sep { opacity: 0.45; }
-.lang-en, .lang-es { opacity: 0.55; transition: opacity 0.2s, color 0.2s; }
+.lang-en, .lang-es { opacity: 1; transition: color 0.2s; }
 .lang-active { opacity: 1; color: var(--gold); }
 
 /* ---------- Hero ---------- */
@@ -847,7 +847,7 @@ html.js .reveal.in { opacity: 1; transform: none; }
 .photo-card img{width:100%;height:250px;object-fit:cover;display:block}
 .photo-card figcaption{padding:14px 18px 16px;font-weight:700;color:#123a28}
 .photo-card figcaption span{display:block;margin-top:3px;font-weight:400;font-size:.9rem;color:#5b6f62;line-height:1.45}
-.photo-note{margin-top:16px;font-size:.85rem;color:#6f7f73;font-style:italic}
+.photo-note{margin-top:16px;font-size:.85rem;color:#536b5c;font-style:italic}
 @media (max-width:480px){.photo-card img{height:210px}}
 
 
