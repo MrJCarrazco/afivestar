@@ -5,6 +5,22 @@
   "use strict";
 
   var DICT = {
+  "Website Privacy": "Privacidad del sitio web",
+  "How this website handles your information": "Cómo maneja este sitio web su información",
+  "Privacy on This Website": "Privacidad en este sitio web",
+  "This notice describes the features of the A Five Drywall website only, not all business or job-site practices.": "Este aviso describe únicamente las funciones del sitio web de A Five Drywall, no todas las prácticas de la empresa ni de las obras.",
+  "Quote requests": "Solicitudes de presupuesto",
+  "The quote forms ask for your name, phone number, optional email address and project details; some forms also ask for your city and type of work. When you submit, those details are sent through FormSubmit to afivedrywall@gmail.com for your estimate inquiry. Please send only information needed to discuss the project, not sensitive personal or financial information.": "Los formularios de presupuesto solicitan su nombre, teléfono, correo electrónico opcional y detalles del proyecto; algunos también solicitan su ciudad y el tipo de trabajo. Al enviar el formulario, esos datos se envían a través de FormSubmit a afivedrywall@gmail.com para su consulta de presupuesto. Envíe solo la información necesaria para hablar del proyecto, no información personal o financiera sensible.",
+  "Hosting and fonts": "Alojamiento y fuentes",
+  "This website is hosted on GitHub Pages, which logs visitors' IP addresses for security. It also loads Google Fonts; Google receives your IP address, requested font URL and browser request headers when fonts are requested.": "Este sitio web se aloja en GitHub Pages, que registra las direcciones IP de los visitantes por motivos de seguridad. También carga Google Fonts; Google recibe su dirección IP, la URL de la fuente solicitada y los encabezados de la solicitud del navegador cuando se solicitan las fuentes.",
+  "Language preference": "Preferencia de idioma",
+  "The language control saves EN or ES in your browser's local storage under afs-lang. You can change it with the EN / ES control or clear it in your browser's site-data settings.": "El control de idioma guarda EN o ES en el almacenamiento local de su navegador con la clave afs-lang. Puede cambiarlo con el control EN / ES o borrarlo en la configuración de datos de sitios de su navegador.",
+  "Third-party services and questions": "Servicios de terceros y preguntas",
+  "These providers handle data under their own policies. Phone and email links open your calling or email app; messages also pass through the providers you use.": "Estos proveedores manejan los datos según sus propias políticas. Los enlaces de teléfono y correo abren su aplicación de llamadas o correo; los mensajes también pasan por los proveedores que usted utiliza.",
+  "FormSubmit privacy notice (PDF)": "Aviso de privacidad de FormSubmit (PDF)",
+  "GitHub privacy statement": "Declaración de privacidad de GitHub",
+  "Google Fonts privacy information": "Información de privacidad de Google Fonts",
+  "For questions about information sent through this website, email": "Si tiene preguntas sobre la información enviada a través de este sitio web, escriba a",
   "The Craft": "El Oficio",
   "Every Stage, Done Right": "Cada Etapa, Bien Hecha",
   "Hanging, taping, mudding, and finishing — the same careful process on every job, from a single patch to a whole house.": "Instalación, encintado, empastado y acabado — el mismo proceso cuidadoso en cada trabajo, desde un solo parche hasta una casa completa.",

@@ -1161,3 +1161,18 @@ html.anim-fallback .section>.container::before,html.anim-fallback .section>.cont
 .dust-soft{opacity:.4}
 /* Gentle float parallax */
 [data-float]{will-change:transform}
+
+/* Website privacy notice */
+.privacy-notice { scroll-margin-top: 92px; }
+.privacy-copy { max-width: 900px; }
+.privacy-copy h3 { margin-top: 26px; margin-bottom: 8px; }
+.privacy-copy p { margin-bottom: 14px; }
+.privacy-copy > p:first-of-type { color: var(--pine); font-size: 1.08rem; }
+.privacy-providers { padding-left: 22px; margin: 16px 0; }
+.privacy-providers li { margin-bottom: 8px; }
+.privacy-form-note { margin-top: 16px; font-size: 0.9rem; }
+.privacy-copy a, .privacy-form-note a { color: var(--green); text-underline-offset: 3px; overflow-wrap: anywhere; }
+.privacy-copy a:hover, .privacy-form-note a:hover { color: var(--green-deep); }
+.site-footer .privacy-link { text-decoration: underline; text-underline-offset: 3px; }
+.privacy-notice:focus-visible, .privacy-copy a:focus-visible, .privacy-form-note a:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+.privacy-link:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
