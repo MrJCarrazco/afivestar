@@ -6,10 +6,26 @@
   var header = document.querySelector(".site-header");
   var toggle = document.querySelector(".nav-toggle");
   if (toggle && header) {
+    var mobileMenu = header.querySelector(".nav-links");
+    function fitMobileMenu() {
+      if (!window.matchMedia("(max-width: 768px)").matches) {
+        header.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+      if (!mobileMenu || !header.classList.contains("nav-open")) return;
+      var bottom = window.innerHeight;
+      if (callFab) bottom = Math.min(bottom, callFab.getBoundingClientRect().top - 12);
+      var top = mobileMenu.getBoundingClientRect().top;
+      mobileMenu.style.setProperty("--nav-max-height", Math.max(0, bottom - top) + "px");
+    }
     toggle.addEventListener("click", function () {
       var open = header.classList.toggle("nav-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open) fitMobileMenu();
     });
+    window.addEventListener("resize", fitMobileMenu);
+    window.addEventListener("scroll", fitMobileMenu, { passive: true });
+    if (window.visualViewport) window.visualViewport.addEventListener("resize", fitMobileMenu);
     // Close menu when a link is chosen
     document.querySelectorAll(".nav-links a").forEach(function (a) {
       a.addEventListener("click", function () {

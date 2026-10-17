@@ -827,7 +827,13 @@ html.js .reveal.in { opacity: 1; transform: none; }
     gap: 6px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: none;
+    /* Keep every row reachable in short landscape, above the floating call control. */
+    max-height: var(--nav-max-height, calc(100vh - 68px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scroll-padding: 8px;
   }
+  .nav-links > li { flex-shrink: 0; }
   .nav-open .nav-links { display: flex; }
   .nav-links a { display: block; text-align: center; }
   .nav-links .lang-toggle { justify-content: center; width: 100%; }
