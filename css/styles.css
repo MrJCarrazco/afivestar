@@ -542,6 +542,23 @@ label.field textarea { resize: vertical; min-height: 110px; }
   100% { box-shadow: 0 10px 28px rgba(245, 197, 24, 0.55), 0 0 0 0 rgba(245, 197, 24, 0); }
 }
 .call-fab { animation: fab-pulse 2.6s ease-out infinite; }
+.call-fab:focus-visible { outline: 3px solid var(--green-deep); outline-offset: 4px; }
+
+/* Mobile call clearance: reserve a safe landing area, not a second scroll container.
+   Ordinary reading can scroll past the float; focused controls and fragment headings
+   must land above it. Footer space remains available without JavaScript. */
+@media (max-width: 900px) {
+  html {
+    scroll-padding-top: 80px;
+    scroll-padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  }
+  .site-footer { padding-bottom: calc(112px + env(safe-area-inset-bottom, 0px)); }
+  .call-fab {
+    margin-bottom: env(safe-area-inset-bottom, 0px);
+    margin-right: env(safe-area-inset-right, 0px);
+  }
+  main .privacy-notice { scroll-margin-top: 12px; }
+}
 
 /* ---------- Page hero (interior pages) ---------- */
 .page-hero {

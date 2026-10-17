@@ -19,6 +19,33 @@
     });
   }
 
+  // Keep keyboard focus out from under the floating call control and sticky header.
+  // CSS supplies the no-JS scrolling/end-space fallback; this only corrects focus.
+  var callFab = document.querySelector(".call-fab");
+  if (callFab && header) {
+    document.addEventListener("focusin", function (event) {
+      var target = event.target;
+      if (!target.getBoundingClientRect || target === callFab || header.contains(target)) return;
+      window.requestAnimationFrame(function () {
+        if (document.activeElement !== target || !window.matchMedia("(max-width: 900px)").matches) return;
+        var rect = target.getBoundingClientRect();
+        var top = Math.max(0, header.getBoundingClientRect().bottom) + 12;
+        var bottom = callFab.getBoundingClientRect().top - 12;
+        var delta = 0;
+        if (rect.height > bottom - top || rect.top < top) delta = rect.top - top;
+        else if (rect.bottom > bottom) delta = rect.bottom - bottom;
+        if (delta) {
+          // Immediate correction even when the visitor has smooth scrolling enabled.
+          var root = document.documentElement;
+          var previous = root.style.scrollBehavior;
+          root.style.scrollBehavior = "auto";
+          window.scrollBy(0, delta);
+          root.style.scrollBehavior = previous;
+        }
+      });
+    });
+  }
+
   // Animation audit v3: auto-enroll content blocks as reveals on pages
   // that have none (town/service/contact pages felt static)
   try {
