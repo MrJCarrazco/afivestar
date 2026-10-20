@@ -38,6 +38,13 @@ img, svg { max-width: 100%; display: block; }
 
 a { color: var(--green); }
 a:hover { color: var(--accent); }
+/* Two-tone focus stays visible on both the dark brand panels and light paper. */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid #0a3b24;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #ffffff;
+}
+#accessibility { scroll-margin-top: 100px; }
 
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 

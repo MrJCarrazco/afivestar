@@ -5,6 +5,20 @@
   "use strict";
 
   var DICT = {
+  "Website Terms": "Términos del sitio web",
+  "Terms of Use": "Términos de uso",
+  "Accessibility": "Accesibilidad",
+  "Use this website to learn about A Five Drywall and request an estimate. A form submission is an inquiry, not a booking, accepted bid or construction contract. Website estimates and scheduling information are preliminary; the scope, price and dates for your project must be agreed separately.": "Use este sitio web para conocer A Five Drywall y solicitar un presupuesto. Enviar un formulario es una consulta, no una reserva, una oferta aceptada ni un contrato de construcción. Los presupuestos y la información de programación del sitio son preliminares; el alcance, el precio y las fechas de su proyecto deben acordarse por separado.",
+  "Content and links": "Contenido y enlaces",
+  "Website text, graphics and photographs may be protected by copyright or other rights. Viewing this site does not grant permission to reuse them. Third-party links lead to services with their own terms and privacy policies.": "Los textos, gráficos y fotografías del sitio pueden estar protegidos por derechos de autor u otros derechos. Visitar este sitio no otorga permiso para reutilizarlos. Los enlaces de terceros llevan a servicios con sus propios términos y políticas de privacidad.",
+  "Using the site responsibly": "Uso responsable del sitio",
+  "Do not send spam, unlawful material, passwords, Social Security numbers or payment-card details. This website is not an emergency service. These website terms do not replace a project agreement or limit rights provided by law.": "No envíe spam, material ilícito, contraseñas, números del Seguro Social ni datos de tarjetas de pago. Este sitio no es un servicio de emergencias. Estos términos no sustituyen un acuerdo de proyecto ni limitan los derechos que otorga la ley.",
+  "Questions about these terms? Email": "¿Tiene preguntas sobre estos términos? Escriba a",
+  "Accessibility and assistance": "Accesibilidad y ayuda",
+  "If a page or form is difficult to use, tell us which page and what went wrong. You can request an estimate by phone or email instead:": "Si le resulta difícil usar una página o un formulario, indíquenos qué página y cuál fue el problema. También puede solicitar un presupuesto por teléfono o correo electrónico:",
+  "or call": "o llame al",
+  "Submitting this form sends your details through FormSubmit to A Five Drywall for your estimate inquiry. This is not a marketing signup or a binding bid. Do not include sensitive information.": "Al enviar este formulario, sus datos se envían a través de FormSubmit a A Five Drywall para su consulta de presupuesto. No es una suscripción de marketing ni una oferta vinculante. No incluya información sensible.",
+  "No fixed retention period for inquiry emails is stated here. Ask the contact below about the handling or retention of a specific inquiry; provider storage is governed separately by their policies. This site has no newsletter signup or marketing-consent checkbox.": "Aquí no se establece un plazo fijo de conservación de los correos de consultas. Pregunte al contacto indicado abajo sobre el manejo o la conservación de una consulta concreta; el almacenamiento de los proveedores se rige por sus propias políticas. Este sitio no tiene suscripción a boletines ni casilla de consentimiento de marketing.",
   "Website Privacy": "Privacidad del sitio web",
   "How this website handles your information": "Cómo maneja este sitio web su información",
   "Privacy on This Website": "Privacidad en este sitio web",
